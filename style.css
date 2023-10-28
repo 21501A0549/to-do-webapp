@@ -1,4 +1,4 @@
-﻿ *{
+ *{
      margin: 0;
      padding: 0;
      font-family: 'Poppins',sans-serif;
@@ -28,8 +28,7 @@
         left: 25vw;
         top: 40vh;
     }
-
-    .cube:nth-child(3) {
+        .cube:nth-child(3) {
         -webkit-animation-delay: 4s;
         animation-delay: 4s;
         left: 75vw;
@@ -155,13 +154,15 @@ section {
     }
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(135deg, #153677, #4e085f);
     padding: 10px;
 }
-.todo-app{
+.todo-app {
     width: 100%;
     max-width: 500px;
     background: #fff;
@@ -169,6 +170,13 @@ section {
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
+.user-details {
+    margin-top: 10px;
+}
+.todo-app ul {
+    overflow-y: auto;
+ }
+
 .todo-app h2{
     color: #002765;
     display: flex;
@@ -206,7 +214,7 @@ button{
     cursor: pointer;
     border-radius: 40px;
 }
-ul li{
+.container ul li{
     list-style: none;
     font-size:17px;
     padding: 12px 8px 12px 50px;
@@ -214,7 +222,7 @@ ul li{
     cursor: pointer;
     position:relative;
 }
-ul li::before{
+.container ul li::before{
     content:'';
     position:absolute;
     height: 28px;
@@ -226,14 +234,14 @@ ul li::before{
     top:12px;
     left:8px;
 }
-ul li.checked{
+.container ul li.checked{
     color:#555;
     text-decoration:line-through;
 }
-    ul li.checked::before {
+  .container  ul li.checked::before {
         background-image: url(images/checked.png);
     }
-ul li span{
+.container ul li span{
     position: absolute;
     right: 0;
     top: 5px;
@@ -244,7 +252,22 @@ ul li span{
     line-height: 40px;
     text-align:center;
     border-radius:50%;
+    overflow:auto;
 }
-ul li span:hover{
+.container ul li span:hover{
     background:#edeef0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
